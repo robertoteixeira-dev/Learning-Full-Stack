@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DOM, Eventos y funciones</title>
+    <script type="text/javascript" src="js/31-ejercicio-dom.js"></script>
+
+    <style>
+        .box{
+            width: 200px;
+            height:250px;
+            float: left;
+            margin: 20px;
+        }
+        .dashed{
+            border: 3px dashed black;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <!--
+        1. Formulario con compos: Nombre, Apellido y Edad
+        2. Boton de enviar el formulario: eventos submit
+        3. Mostrar datos por pantalla
+        4. Crear una caja donde va a aparecer los datos ingresados pelo usuario pero que antes este oculta
+        5. Tener un boton que al darle click nos muestra los datos actuales del formulario
+
+    -->
+
+    <h1>Ejercicio 3: DOM, Eventos y Funciones</h1>
+    
+    <div class="box">
+        <form action="#" method="POST" id="formulario" onsubmit="return false;">
+            <label for="nombre">Nombre:</label> <br/>
+            <input type="text" name="nombre" id="nombre" /> <br/>
+
+            <label for="apellidos">Apellidos:</label> <br/>
+            <input type="text" name="apellidos" id="apellidos" /> <br/>
+
+            <label for="edad">Edad:</label> <br/>
+            <input type="number" name="edad" id="edad" /> <br/>
+
+            <input type="submit" value="Submit" id="submit" />
+        </form>
+    </div>
+
+    <div class="box dashed">
+        <h3>Información del usuario</h3>
+        <hr>
+    </div>
+
+</body>
+</html>
