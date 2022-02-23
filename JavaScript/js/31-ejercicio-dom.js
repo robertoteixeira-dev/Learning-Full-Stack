@@ -22,7 +22,25 @@ window.addEventListener('load', function () {
 
         var nombre = document.querySelector("#nombre").value; //La propiedad value saco el valor que tiene adentro
         var apellidos = document.querySelector("#apellidos").value;
-        var edad = document.querySelector("#edad").value;
+        var edad = parseInt(document.querySelector("#edad").value);
+
+        if(nombre.trim() == null || nombre.trim().length == 0){
+            alert("El nombre no es válido");
+            document.querySelector("#error_nombre").innerHTML = "El nombre no es valido";
+            return false;
+        }else{
+            document.querySelector("#error_nombre").style.display = "none";
+        }
+
+        if(apellidos.trim() == null || apellidos.trim().length == 0){
+            alert("Los apellidos no son válidos");
+            return false;
+        }
+
+        if(edad == null || edad <= 0 || isNaN(edad)){
+            alert("La edad no es válido");
+            return false;
+        }
 
         box_dashed.style.display = "block";
 
@@ -43,3 +61,11 @@ window.addEventListener('load', function () {
 });
 
 
+//Por ejemplo, si tengo un boton y lo quiero hacer cambios de estilo puedo hacer seleccionando:
+boton.addEventListener('click', function(){
+    cambiarColor();
+    boton.style.border = "10px solid black";
+});
+//Pero hay una forma mejor de hacerlo, con el ordenador this
+this.style.border = "10px solid black";
+console.log(this);

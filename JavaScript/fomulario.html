@@ -28,6 +28,7 @@
         3. Mostrar datos por pantalla
         4. Crear una caja donde va a aparecer los datos ingresados pelo usuario pero que antes este oculta
         5. Tener un boton que al darle click nos muestra los datos actuales del formulario
+        6. Hacer la validación del formulario, es decir, verificar si el usuario no puso nada dentro y pedirle para hacerlo
 
     -->
 
@@ -37,6 +38,7 @@
         <form action="#" method="POST" id="formulario" onsubmit="return false;">
             <label for="nombre">Nombre:</label> <br/>
             <input type="text" name="nombre" id="nombre" /> <br/>
+            <span id="error_nombre"></span>
 
             <label for="apellidos">Apellidos:</label> <br/>
             <input type="text" name="apellidos" id="apellidos" /> <br/>
