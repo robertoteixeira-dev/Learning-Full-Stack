@@ -42,5 +42,3 @@ formulario.addEventListener('submit', function () { //Para coger el evento submi
 });
 
 
-
-
