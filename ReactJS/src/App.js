@@ -4,6 +4,10 @@ import './assets/css/App.css';
 
 //Importar componentes:
 import MiComponente from './components/MiComponente';
+import Peliculas from './components/Peliculas';
+import Header from './components/Header';
+import Slider from './components/Slider';
+
 //Ahora puedo crear un objeto y utilizar mi componente
 
 function HolaMundo(name, edad) {
@@ -22,6 +26,10 @@ function App() {
 
   return (
     <div className="App">
+
+      <Header />
+      <Slider />
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -32,6 +40,7 @@ function App() {
 
         <section className="componentes">
           <MiComponente />
+          <Peliculas />
         </section>
 
       </header>
@@ -53,4 +62,5 @@ export default App;
 //Para crear una clase no se puede poner class="" sino que className=""
 
 
+//Existen compojentes estáticos en ls cuales no podemos hacer tantas funcionalidades. Se crean cuando va a ser una parte de la  pantalla que va a ser estático.
 
