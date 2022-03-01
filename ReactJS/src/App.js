@@ -8,6 +8,7 @@ import Slider from './components/Slider';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import SeccionPruebas from './components/SeccionPruebas';
+import Peliculas from './components/Peliculas';
 
 //En el contenido cambia para div className="center" y section id="content" y pone el <Sidebar />
 
@@ -26,7 +27,7 @@ function App() {
 
       <div className="center">
 
-        <SeccionPruebas />
+        <Peliculas/>
 
         <Sidebar />
 
