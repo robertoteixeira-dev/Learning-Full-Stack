@@ -7,8 +7,9 @@ import Header from './components/Header';
 import Slider from './components/Slider';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
-import SeccionPruebas from './components/SeccionPruebas';
-import Peliculas from './components/Peliculas';
+//import SeccionPruebas from './components/SeccionPruebas';
+//import Peliculas from './components/Peliculas';
+import Router from './Router';
 
 //En el contenido cambia para div className="center" y section id="content" y pone el <Sidebar />
 
@@ -26,9 +27,12 @@ function App() {
       />
 
       <div className="center">
+        
+        <Router />
 
+        {/*
         <Peliculas/>
-
+        */}
         <Sidebar />
 
         <div className="clearfix"></div>
@@ -61,5 +65,9 @@ export default App;
 //El estado es la forma que tiene React de almacenar propiedades y datos que los componentes van a estar mostrando y que además queremos que sean completamente dinámico, es decir, que cuando un dato del estado cambie se vea reflejado inmediatamente en la vista/pantalla del usuario sin necesidad de recargar la página
 
 
+//Cls para limpiar la consola 
+// Para instalar el paquete de las rutas: npm install --save react-router-dom
+//Después hago npm start
 
-
+//La configuración del router va a ir dentro de un component llamado Router.js
+//Abre el cmd, pone en la carpeta del proyecto 
