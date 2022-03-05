@@ -36,11 +36,6 @@ class Peliculas extends Component {
 
     }
 
-
-
-
-
-
     //Ahora puedo crear un boton para el usuario hacer el cambio
 
     //Si quiero que se cambie de un titulo aleatorio, pongo:
@@ -75,7 +70,6 @@ class Peliculas extends Component {
                         <span>{this.state.favorita.titulo}</span>
                     </p>
                 }
-
 
                 {/*Creo un componente pelicula para no llenar de codigo*/}
 

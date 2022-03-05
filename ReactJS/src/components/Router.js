@@ -1,24 +1,29 @@
-import React, {Component} from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import SeccionPruebas from './components/SeccionPruebas';
 import MiComponente from './components/MiComponente';
+import Peliculas from './components/Peliculas';
 
-class Router extends Component{
+class Router extends Component {
 
-    render(){
-        return(
-            <BrowserRouter>
-            
-            <Switch> 
-                <Route path="/ruta-prueba" component={SeccionPruebas} />
-                <Route path="/segunda-ruta" component={MiComponente} />
-            </Switch>
+    render() {
+        return (
+            <Router>
 
-            </BrowserRouter>
+                <div className="Router">
+                    
+                    <Route exact path="/" component={Peliculas} />
+                    <Route exact path="/ruta-prueba" component={SeccionPruebas} />
+                    <Route exact path="/mi-componente" component={MiComponente} />
+
+                </div>
+
+            </Router>
         );
     }
 }
+
 
 export default Router;
 

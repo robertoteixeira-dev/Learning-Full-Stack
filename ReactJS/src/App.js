@@ -7,11 +7,10 @@ import Header from './components/Header';
 import Slider from './components/Slider';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
-//import SeccionPruebas from './components/SeccionPruebas';
-//import Peliculas from './components/Peliculas';
-import Router from './Router';
+//import Router from './Router';
 
-//En el contenido cambia para div className="center" y section id="content" y pone el <Sidebar />
+import SeccionPruebas from './components/SeccionPruebas';
+import Peliculas from './components/Peliculas';
 
 function App() {
 
@@ -21,24 +20,25 @@ function App() {
     <div className="App">
 
       <Header />
-      <Slider 
-      title="Aprendiendo Props"
-      btn={buttonString}
+
+      <Slider
+        title="Aprendiendo Props"
+        btn={buttonString}
       />
 
       <div className="center">
         
+        {/*
         <Router />
 
-        {/*
         <Peliculas/>
-        */}
+*/}
         <Sidebar />
 
         <div className="clearfix"></div>
 
       </div> {/*END DIV CENTER*/}
-      
+
       <Footer />
 
     </div>
