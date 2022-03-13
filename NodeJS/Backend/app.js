@@ -4,18 +4,27 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 
+
 // Ejecutar express para trabajar con HTTP
 var app = express();
 
+
 // Cargar ficheros rutas
+var article_routes = require('./routes/article');
+
 
 // Cargar Middlewares que es algo que se ejecuta antes de cargar una ruta o una aplicación
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); //Convertir en Json
 
+
 // Cargar el CORS para permitir peticiones desde el Front-End
 
-// Añadir prefijos a rutas
+
+
+// Añadir prefijos a rutas / Cargar rutas
+app.use('/api', article_routes);
+
 
 // Añdir una ruta o metodo de prueba para el API 
 
