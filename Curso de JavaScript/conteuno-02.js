@@ -2,7 +2,7 @@
 // Se a hora estiver entre 6 até 12, vamos exibir: Bom dia
 // Se estiver entre 12 até 20h, vamos exibir: Boa tarde
 // Caso contrario: Boa noite
-
+/*
 let hora = 10;
 
 if (hora > 6 && hora < 12) {
@@ -86,15 +86,16 @@ for(let chave in pessoa) {
 
 //Exemplo em um array
 const cores = ['Vermelho', 'Azul', 'Verde'];
+
 for (let indice in cores){ //Definimos indice porque em array todas as propiedades são indices
     console.log(indice); //Vai exibir os números de cada indice
     console.log(cores[indice]); //Agora sim vai mostrar as propiedades
 }
 
 // FOR - OF
-
-
-
+for(let cor of cores){
+    console.log(cor);
+}
 
 
 
