@@ -1,20 +1,24 @@
 import React from 'react';
 import Post from './Post';
+import Header from './Header';
 
 const category = 'Products';
 
 function App() {
     return (
         <>
-            <h1>Component</h1>;
-            <p>{ category }</p>
+            <Header 
+                title="My Header"
+                
+            >
+                Uma string na aula de prop children
+            </Header>
 
             <Post 
                 title="First post"
                 description="Description fo the first post"
                 category={category}
             />
-
         </>
 
 
