@@ -18,6 +18,7 @@ function App() {
                 title="First post"
                 description="Description fo the first post"
                 category={category}
+                likes={20}
             />
         </>
 
