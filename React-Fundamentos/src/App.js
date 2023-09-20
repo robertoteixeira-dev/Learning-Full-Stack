@@ -3,6 +3,11 @@ import Post from './Post';
 import Header from './Header';
 
 const category = 'Products';
+const posts = [
+    {title: 'title 01'},
+    {title: 'title 01'},
+    {title: 'title 01'},
+];
 
 function App() {
     return (
@@ -20,6 +25,16 @@ function App() {
                 category={category}
                 likes={20}
             />
+
+            {posts.map(post => (
+                <Post
+                    key={post.title} // Importante passar uma key e ela deve ser única
+                    title={post.title}
+                    post={{ 
+                        title: post.title,
+                    }}
+                />
+            ))}
         </>
 
 
